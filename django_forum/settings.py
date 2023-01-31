@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-1mi8xir429wn7epay3eizi%=-%ilufh6_*&c_&rb_1jj+2&k2r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
 
 
 # Application definition
@@ -124,15 +124,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR/  'static'
+    BASE_DIR / 'static'
 ]
 
 
-cloudinary.config( 
-  cloud_name = "dwj8rmzt5", 
-  api_key = "433212361368173", 
-  api_secret = "2ZvbkC73dV-5dogC6dyL8AhYHqk",
-  secure=True,
+cloudinary.config(
+    cloud_name="dwj8rmzt5",
+    api_key="433212361368173",
+    api_secret="2ZvbkC73dV-5dogC6dyL8AhYHqk",
+    secure=True,
 )
 
 # Default primary key field type
